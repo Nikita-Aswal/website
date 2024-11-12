@@ -1,0 +1,21 @@
+package com.time.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import com.goal.model.Goal;
+import com.user.dao.UserDao;
+
+public class TimeDao {
+    
+	private String jdbcURL = "jdbc:mysql://localhost:30006/userdata";
+	private String jdbcUserName="root";
+	private String jdbcPassword="root";
+	
+	

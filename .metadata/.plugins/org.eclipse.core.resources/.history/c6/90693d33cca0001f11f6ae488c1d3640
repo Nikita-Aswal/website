@@ -1,0 +1,12 @@
+package com.time.model;
+
+import java.sql.Timestamp;
+
+public class Time {
+    private int entryId;
+    private int userId;
+    private Timestamp startTime;
+    private Timestamp endTime;
+    private String description;
+    private Timestamp createdAt;
+    private Timestamp updatedAt;
