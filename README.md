@@ -11,7 +11,7 @@ This is a Maven-based Spring Boot project for a Time Management and Goal Setting
 - Form Validation (JavaScript)
 
 ## Technologies Used
-- *Spring Boot*
-- *Thymeleaf*
-- *Bootstrap*
-- *H2 Database*
+- Spring Boot
+- Thymeleaf
+- Bootstrap
+- H2 Database
