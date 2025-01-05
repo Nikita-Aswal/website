@@ -1,117 +1,82 @@
+
 package com.goal.model;
+import java.sql.Timestamp;
 
 public class Goal {
-	
-	
-	 private int goal_Id;
-	 private String title;
-	 private String description;
-	 private int start_date;
-	 private int end_date;
-	 
-	 
-	 
-	
-	 public Goal() {
+    private int goalId;
+    private String title;
+    private String goalDescription;
+    private Timestamp createdAt;
+    private Timestamp updatedAt;
+
+    
+    
+
+    public Goal() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
-
-
-	public Goal(int goal_Id, String title, String description, int start_date, int end_date) {
-		super();
-		this.goal_Id = goal_Id;
-		this.title = title;
-		this.description = description;
-		this.start_date = start_date;
-		this.end_date = end_date;
+	public Goal(int goalId, String title, String goalDescription, Timestamp createdAt, Timestamp updatedAt) {
+        this.goalId = goalId;
+        this.title = title;
+        this.goalDescription = goalDescription;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+	
+	public int getGoalId() {
+		return goalId;
 	}
 
-     
-
-
-	public int getGoal_Id() {
-		return goal_Id;
+	public void setGoalId(int goalId) {
+		this.goalId = goalId;
 	}
-
-
-
-
-	public void setGoal_Id(int goal_Id) {
-		this.goal_Id = goal_Id;
-	}
-
-
-
 
 	public String getTitle() {
 		return title;
 	}
 
-
-
-
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-
-
-
-	public String getDescription() {
-		return description;
+	public String getGoalDescription() {
+		return goalDescription;
 	}
 
-
-
-
-	public void setDescription(String description) {
-		this.description = description;
+	public void setGoalDescription(String goalDescription) {
+		this.goalDescription = goalDescription;
 	}
 
-
-
-
-	public int getStart_date() {
-		return start_date;
+	public Timestamp getCreatedAt() {
+		return createdAt;
 	}
 
-
-
-
-	public void setStart_date(int start_date) {
-		this.start_date = start_date;
+	public void setCreatedAt(Timestamp createdAt) {
+		this.createdAt = createdAt;
 	}
 
-
-
-
-	public int getEnd_date() {
-		return end_date;
+	public Timestamp getUpdatedAt() {
+		return updatedAt;
 	}
 
-
-
-
-	public void setEnd_date(int end_date) {
-		this.end_date = end_date;
+	public void setUpdatedAt(Timestamp updatedAt) {
+		this.updatedAt = updatedAt;
 	}
-
-
 
 
 	@Override
 	public String toString() {
-		return "Goal [goal_Id=" + goal_Id + ", title=" + title + ", description=" + description + ", start_date="
-				+ start_date + ", end_date=" + end_date + "]";
+		return "Goal [goalId=" + goalId + ", title=" + title + ", goalDescription=" + goalDescription + ", createdAt="
+				+ createdAt + ", updatedAt=" + updatedAt + "]";
 	}
-     
-	
-	
-	 
-	 
+
+
 
 }
+	
+	
+
+    
 

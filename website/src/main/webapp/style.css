@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #f8f9fa;
+}
+h1 {
+    color: #343a40;
+    margin-top: 20px;
+}
+form input,
+form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
