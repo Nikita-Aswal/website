@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.timemanagement.controller.MainController">
+    
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    
+    <left>
+        <VBox spacing="10">
+            <Label text="Tasks" styleClass="section-header"/>
+            <TextField fx:id="taskTitleField" promptText="Task Title"/>
+            <TextArea fx:id="taskDescField" promptText="Description" prefRowCount="3"/>
+            <DatePicker fx:id="taskDueDatePicker" promptText="Due Date"/>
+            <Button text="Add Task" onAction="#handleAddTask"/>
+            <TableView fx:id="taskTable" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </left>
+    
+    <right>
+        <VBox spacing="10">
+            <Label text="Goals" styleClass="section-header"/>
+            <TextField fx:id="goalTitleField" promptText="Goal Title"/>
+            <TextArea fx:id="goalDescField" promptText="Description" prefRowCount="3"/>
+            <DatePicker fx:id="goalTargetDatePicker" promptText="Target Date"/>
+            <Button text="Add Goal" onAction="#handleAddGoal"/>
+            <TableView fx:id="goalTable" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </right>
+    
+</BorderPane>
